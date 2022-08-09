@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 
 # credit https://github.com/github/gitignore/blob/main/Java.gitignore
+.history/
+javafx-sdk-18.0.2/
