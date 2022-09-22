@@ -10,8 +10,8 @@ public class DocDocuments {
      * prints: 'Hello, adventurer <name>!'
      */
 
-    public static void greet(){
-
+    public static void greet(String name){
+        System.out.println("Hello, adventurer " + name + "!");
     }
 
     /*
