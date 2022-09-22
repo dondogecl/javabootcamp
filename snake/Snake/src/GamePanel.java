@@ -171,6 +171,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 SCREEN_HEIGHT / 2);
         // add an image
         ImageIcon image = new ImageIcon("src/resources/snake_640_crop.png");
+        // Image credits: https://pixabay.com/vectors/snake-python-serpent-green-reptile-312561/
         image.paintIcon(this, g, SCREEN_WIDTH/4, SCREEN_HEIGHT/2 );
 
         // Press R to restart
