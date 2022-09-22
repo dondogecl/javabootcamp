@@ -175,12 +175,12 @@ public class GamePanel extends JPanel implements ActionListener {
         image.paintIcon(this, g, SCREEN_WIDTH/4, SCREEN_HEIGHT/2 );
 
         // Press R to restart
-        // g.setColor(Color.white);
-        // g.setFont(new Font("Ink Free", Font.BOLD, 30));
-        // FontMetrics metrics3 = getFontMetrics(g.getFont());
-        // g.drawString("Press R to Restart",
-        // (SCREEN_WIDTH - metrics3.stringWidth("Press R to restart")) / 2,
-        // SCREEN_HEIGHT / 2 + 100);
+        g.setColor(Color.white);
+        g.setFont(new Font("Ink Free", Font.BOLD, 30));
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("Press R to Restart",
+        (SCREEN_WIDTH - metrics3.stringWidth("Press R to restart")) / 2,
+        SCREEN_HEIGHT / 2 - 100);
     }
 
     @Override
@@ -239,11 +239,11 @@ public class GamePanel extends JPanel implements ActionListener {
                     }
                     break;
                 // Play Again or Restart Game Key
-                // case KeyEvent.VK_R:
-                //     if (!running) {
-                //         // need to implement a restart method
-                //     }
-                //     break;
+                case KeyEvent.VK_R:
+                    if (!running) {
+                        new GameFrame();
+                    }
+                    break;
             }
         }
     }
